@@ -16,7 +16,9 @@ platform_logos = []
 
 # Set the path for the background box and the Tarkov font
 box_path = 'assets/Box.png'
-font_path = 'assets/Bender.otf'
+font_path_reg = 'assets/Bender.otf'
+font_path_bold = 'assets/Bender-Bold.otf'
+
 
 # Open the background box
 box = Image.open(box_path)
@@ -74,25 +76,25 @@ for i in range(len(streamer_names)):
     logo_path = os.path.join(os.path.abspath(os.curdir), f'assets/Logos/{platform_logos[platform_index]}')
     logo = Image.open(logo_path)
 
-    # Scale logo to 100x100 px
-    logo = logo.resize((100, 100))
+    # Scale logo to 99x99 px
+    logo = logo.resize((99, 99))
 
     # Add the logo and background box to the main image
-    img.paste(logo, (150, 50))
-    img.paste(box, (250, 50))
+    img.paste(logo, (157, 47))
+    img.paste(box, (256, 47))
 
     streamer_name = streamer_names[i]
 
     # Set the font size to 40 and put the streamer's name onto the main image
-    draw.font = ImageFont.truetype(font_path, 40)
-    draw.text((280, 55), streamer_name)
+    draw.font = ImageFont.truetype(font_path_reg, 52)
+    draw.text((281, 48), text=streamer_name)
 
     streamer_link = platform_links[platform_index] + streamer_links[i]
     platform_color = platform_colors[platform_index]
 
     # Set the font size to 20 and combine the
-    draw.font = ImageFont.truetype(font_path, 20)
-    draw.text((280, 110), streamer_link.upper(), platform_color)
+    draw.font = ImageFont.truetype(font_path_bold, 25)
+    draw.text((281, 105), streamer_link.upper(), platform_color)
 
     # Save the overlay with the streamer's name as a unique file
     img.save(output_path + f'/{streamer_name}-{platform_names[platform_index]}.png')
