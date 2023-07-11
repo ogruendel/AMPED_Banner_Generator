@@ -31,11 +31,11 @@ After providing the path, a new folder will be generated in `src` called `out` w
 - [Youtube](https://youtube.com)
 
 ## Example output
-![Cozy-Youtube](https://photos.app.goo.gl/9GG49UYre2jXybk59)
+![Example_Kick.png](src%2Fassets%2FExample_Kick.png)
 
-![Cozy-Twitch](https://photos.app.goo.gl/uxxNeYMu9miwWBnn7)
+![Example_Twitch.png](src%2Fassets%2FExample_Twitch.png)
 
-![Cozy-Kick](https://photos.app.goo.gl/KtrMzMWZt7rNGcNf9)
+![Example_Youtube.png](src%2Fassets%2FExample_Youtube.png)
 
 ## Adding platforms
 Support for multiple different platforms can be manually added by appending a new JSON object to the data.json file in **src/assets** that includes the following:
