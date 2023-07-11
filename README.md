@@ -31,12 +31,11 @@ After providing the path, a new folder will be generated in `src` called `out` w
 - [Youtube](https://youtube.com)
 
 ## Example output
-![Example_Kick.png](src%2Fassets%2FExample_Kick.png)
+![Example_Kick.png](src/assets/Readme/Example_Kick.png)
 
-![Example_Twitch.png](src%2Fassets%2FExample_Twitch.png)
+![Example_Twitch.png](src/assets/Readme/Example_Twitch.png)
 
-![Example_Youtube.png](src%2Fassets%2FExample_Youtube.png)
-
+![Example_Youtube.png](src/assets/Readme/Example_Youtube.png)
 ## Adding platforms
 Support for multiple different platforms can be manually added by appending a new JSON object to the data.json file in **src/assets** that includes the following:
 ```json
