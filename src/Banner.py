@@ -52,7 +52,7 @@ for line in data_json:
     platform_names.append(str(line['platform']))
     platform_links.append(str(line['link']))
     platform_colors.append(str(line['color']))
-    platform_logos.append(str(line['pathLogo']))
+    platform_logos.append(str(line['fileName']))
 
 
 # Check if an output folder already exists, if not, make one
@@ -71,7 +71,7 @@ for i in range(len(streamer_names)):
 
     platform_index = platform_names.index(streamer_platforms[i])
 
-    logo_path = os.path.join(os.path.abspath(os.curdir), platform_logos[platform_index])
+    logo_path = os.path.join(os.path.abspath(os.curdir), f'assets/Logos/{platform_logos[platform_index]}')
     logo = Image.open(logo_path)
 
     # Scale logo to 100x100 px
@@ -95,5 +95,5 @@ for i in range(len(streamer_names)):
     draw.text((280, 110), streamer_link.upper(), platform_color)
 
     # Save the overlay with the streamer's name as a unique file
-    img.save(output_path + f'/{streamer_name}.png')
+    img.save(output_path + f'/{streamer_name}-{platform_names[platform_index]}.png')
 
