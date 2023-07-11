@@ -1,0 +1,20 @@
+[
+  {
+    "platform": "Youtube",
+    "link": "youtube.com/",
+    "color": "#FF0000",
+    "pathLogo": "assets/Logos/Youtube.png"
+  },
+  {
+    "platform": "Twitch",
+    "link": "twitch.tv/",
+    "color": "#6441A5",
+    "pathLogo":  "assets/Logos/Twitch.png"
+  },
+  {
+    "platform": "Kick",
+    "link": "kick.com/",
+    "color": "#52FC12",
+    "pathLogo":  "assets/Logos/Kick.png"
+  }
+]
